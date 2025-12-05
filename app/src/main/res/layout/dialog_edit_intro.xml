@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_rounded_all"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="자기소개 수정"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#111827"
+    android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:gravity="top"
+        android:background="@drawable/bg_input_rounded"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:hint="자기소개를 입력해주세요."
+        android:textColor="#374151"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="취소"
+            android:textColor="#374151"
+            android:background="@drawable/bg_button_outline_gray"
+            android:layout_marginEnd="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="저장"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_button_primary"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_create_mentoring"
+        android:title="멘토링 제안"
+        android:icon="@drawable/ic_menu_sparkles_with_bg" />
+    <item
+        android:id="@+id/action_view_profile"
+        android:title="프로필 보기"
+        android:icon="@drawable/ic_round_account_circle"/>
+</menu>

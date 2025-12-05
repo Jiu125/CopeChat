@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+        <View
+            android:id="@+id/view_icon_bg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_rounded_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.115" />
+
+        <ImageView
+        android:id="@+id/iv_activity_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@id/view_icon_bg"
+        app:layout_constraintEnd_toEndOf="@id/view_icon_bg"
+        app:layout_constraintStart_toStartOf="@id/view_icon_bg"
+        app:layout_constraintTop_toTopOf="@id/view_icon_bg"
+        app:tint="#7F56D9"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_activity_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="알고리즘 스터디 멘토링"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_icon_bg"
+        app:layout_constraintTop_toTopOf="@id/view_icon_bg" />
+
+    <TextView
+        android:id="@+id/tv_activity_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="김수진 멘토"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_activity_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity_title" />
+
+    <ImageView
+        android:id="@+id/iv_time_icon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="6dp"
+        android:src="@android:drawable/ic_menu_recent_history"
+        app:layout_constraintStart_toStartOf="@id/tv_activity_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity_subtitle"
+        app:tint="#2196F3"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_activity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="오늘 오후 3시"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_time_icon"
+        app:layout_constraintStart_toEndOf="@id/iv_time_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_time_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
